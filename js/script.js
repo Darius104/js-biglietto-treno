@@ -11,7 +11,7 @@ const kmDaPercorrere = prompt('Quanti km percorrerai ?');
 const userAge = parseInt(prompt('Quanti anni hai ?'));
 
 //calcolo prezzo biglietto in base ai km percorsi
-let prezzoBiglietto = kmDaPercorrere / 0.21;
+let prezzoBiglietto = kmDaPercorrere * 0.21;
 prezzoBiglietto = prezzoBiglietto.toFixed(2);
 prezzoBiglietto = parseFloat(prezzoBiglietto);
 console.log(prezzoBiglietto);
@@ -42,6 +42,6 @@ if ( userAge < 18 ){
 }else{
     console.log("Nessuno sconto applicato");
     console.log(prezzoBiglietto.toFixed(2));
-    
+
     document.getElementById('prezzo_finale').innerHTML ="Nessuno sconto applicato, prezzo: " + prezzoBiglietto.toFixed(2) + " euro";
 }
